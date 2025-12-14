@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Climate Innovations{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/innovation.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center text-success mb-4"> Latest Climate Innovations</h1>
+    <p class="lead text-center mb-5">
+        Explore groundbreaking technologies and solutions driving climate resilience and sustainability.
+    </p>
+
+    <div class="row">
+        <!-- Carbon Capture -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/carbon.png' %}" class="card-img-top" alt="Carbon Capture">
+                <div class="card-body">
+                    <h5 class="card-title">Carbon Capture Technology</h5>
+                    <p class="card-text">Advanced systems are reducing CO₂ emissions by capturing and storing carbon from industrial processes.</p>
+                    <a href="https://carbontrail.net/blog/top-6-climate-tech-trends-for-2025/" target="_blank" class="btn btn-outline-success">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI for Climate Predictions -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/ai.png' %}" class="card-img-top" alt="AI Predictions">
+                <div class="card-body">
+                    <h5 class="card-title">AI for Climate Predictions</h5>
+                    <p class="card-text">Artificial Intelligence is being used to forecast droughts, floods, and optimize farming practices.</p>
+                    <a href="https://www.startus-insights.com/innovators-guide/climate-tech-trends-innovations/" target="_blank" class="btn btn-outline-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Green Mobility -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/mobility.png' %}" class="card-img-top" alt="Green Mobility">
+                <div class="card-body">
+                    <h5 class="card-title">Green Mobility</h5>
+                    <p class="card-text">Electric vehicles, solar-powered transport, and clean mobility solutions are transforming cities worldwide.</p>
+                    <a href="https://climateinsider.com/2024/08/26/climate-tech-trends-and-innovations/" target="_blank" class="btn btn-outline-info">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Climate-Smart Agriculture -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/smart.png' %}" class="card-img-top" alt="Climate-Smart Agriculture">
+                <div class="card-body">
+                    <h5 class="card-title">Climate-Smart Agriculture</h5>
+                    <p class="card-text">Innovations like solar irrigation and precision farming are boosting food security in vulnerable regions.</p>
+                    <a href="https://citizen.digital/article/climate-smart-innovation-among-initiatives-considered-for-lucrative-grant-launched-in-kenya-n373999" target="_blank" class="btn btn-outline-warning">Discover</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Renewable Energy -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/renenergy.png' %}" class="card-img-top" alt="Renewable Energy">
+                <div class="card-body">
+                    <h5 class="card-title">Renewable Energy Expansion</h5>
+                    <p class="card-text">Wind, solar, and geothermal projects are scaling up to achieve 100% clean energy goals globally.</p>
+                    <a href="https://www.capitalfm.co.ke/news/2025/11/british-council-showcases-innovation-and-sustainability-as-nairobi-hosts-uk-kenya-season-climate-tech-event/" target="_blank" class="btn btn-outline-danger">See Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

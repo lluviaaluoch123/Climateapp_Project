@@ -1,0 +1,99 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.form-card, .table-card {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-primary, .btn-secondary, .btn-danger {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-primary {
+    background: #27ae60;
+    color: #fff;
+}
+.btn-primary:hover {
+    background: #219150;
+}
+
+.btn-secondary {
+    background: #2980b9;
+    color: #fff;
+}
+.btn-secondary:hover {
+    background: #1f6391;
+}
+
+.btn-danger {
+    background: #e74c3c;
+    color: #fff;
+}
+.btn-danger:hover {
+    background: #c0392b;
+}
+
+.crud-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.crud-table th, .crud-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.crud-table th {
+    background: #2c3e50;
+    color: #fff;
+}
+
+.crud-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.empty-msg {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+}

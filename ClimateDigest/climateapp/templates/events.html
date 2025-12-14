@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Events - ClimateDigest{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/events.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center text-success mb-4">ClimateDigest Events</h1>
+    <p class="lead text-center mb-5">
+        Stay updated on upcoming climate events, workshops, and community initiatives across Africa and beyond.
+    </p>
+
+    <!-- Event 1 -->
+    <section class="mb-5">
+        <h2 class="text-primary mb-3">Community Tree Planting Drive</h2>
+        <div class="card shadow-sm bg-light p-4">
+            <p>
+                Join local volunteers in Nairobi for a tree planting campaign aimed at restoring degraded land
+                and improving urban air quality. Together, we aim to plant 2,000 seedlings in Karura Forest.
+            </p>
+            <p><strong> Location:</strong> Karura Forest, Nairobi</p>
+            <p><strong> Date:</strong> January 20, 2026</p>
+            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScj_U_hIPeHrM2KWvq9wTB6_knBHrRQOR0eHQY_MiJaFXoLxw/viewform?usp=header" target="_blank">Register here</a></p>
+        </div>
+    </section>
+
+    <!-- Event 2 -->
+    <section class="mb-5">
+        <h2 class="text-primary mb-3">Climate Policy Workshop</h2>
+        <div class="card shadow-sm bg-light p-4">
+            <p>
+                A workshop bringing together policymakers, researchers, and community leaders to discuss
+                climate adaptation strategies and sustainable development goals for Kenya.
+            </p>
+            <p><strong> Location:</strong> Nairobi University Conference Hall</p>
+            <p><strong> Date:</strong> February 10, 2026</p>
+            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdm6cHa5r9_EIy_nB9S5UytR2v1lIaTL7Z6AehaEcp4S7saSA/viewform?usp=publish-editor" target="_blank">Register Here</a></p>
+        </div>
+    </section>
+
+    <!-- Event 3 -->
+    <section class="mb-5">
+        <h2 class="text-primary mb-3">Youth Climate Hackathon</h2>
+        <div class="card shadow-sm bg-light p-4">
+            <p>
+                Young innovators will gather to design tech solutions for climate resilience, focusing on
+                renewable energy, water conservation, and sustainable agriculture.
+            </p>
+            <p><strong> Location:</strong> iHub, Nairobi</p>
+            <p><strong> Date:</strong> March 5–7, 2026</p>
+            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdhZFhYdoX5E_wyNjFT48xkYla2qj_v5-4kJ6mq4Si2ghIYAA/viewform?usp=publish-editor" target="_blank">Register Here</a></p>
+        </div>
+    </section>
+</div>
+{% endblock content %}

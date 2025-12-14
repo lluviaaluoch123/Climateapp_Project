@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About ClimateDigest{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<div class="container my-5">
+    <header class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-success">About ClimateDigest</h1>
+        <p class="lead text-muted">
+           Climate digest is an informative web application created to help people understand what is happening to our country and we can play a part in protecting it.
+           This platform presents climate information in a clear and engaging way to create climate awearness.
+            Our mission is built upon six fundamental pillars designed to foster a sustainable future. These include education and awearness, mitigation programs,researcg and innovation, adaptation and resilience,
+            community engagement and patnerships, and policy advocacy.
+        </p>
+    </header>
+
+    <section class="p-4 p-md-5 mb-5 bg-light rounded-3 shadow-sm">
+        <div class="row align-items-center">
+            <div class="col-md-7 order-md-1">
+                <h2 class="h3 fw-bold text-success mb-3">1. Education & Awareness</h2>
+                <p class="fs-5">
+                    We believe informed action begins with understanding. ClimateDigest is dedicated to providing clear,
+                     accessible, and up-to-date information on climate change, its impacts, and solutions. 
+                     Through articles, explainers, and data visualizations, we empower individuals to understand the complexities of our changing planet.
+                </p>
+            </div>
+            <div class="col-md-5 order-md-2 text-center">
+                <img src="{% static 'images/children.png' %}" alt="Students learning about climate change" class="img-fluid rounded shadow-sm my-3">
+            </div>
+        </div>
+    </section>
+
+    <section class="p-4 p-md-5 mb-5 bg-white rounded-3 shadow-sm">
+        <div class="row align-items-center">
+            <div class="col-md-5 text-center">
+                <img src="{% static 'images/wind.png' %}" alt="Wind turbines and solar panels" height="50%" class="img-fluid rounded shadow-sm my-3">
+            </div>
+            <div class="col-md-7">
+                <h2 class="h3 fw-bold text-success mb-3">2. Mitigation Programs</h2>
+                <p class="fs-5">
+                    Reducing greenhouse gas emissions is paramount. We highlight and advocate for effective mitigation strategies,
+                     from renewable energy transitions and carbon capture technologies to sustainable agriculture and reforestation
+                      efforts. Discover innovative projects making a long lasting difference.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-4 p-md-5 mb-5 bg-light rounded-3 shadow-sm">
+        <div class="row align-items-center">
+            <div class="col-md-7 order-md-1">
+                <h2 class="h3 fw-bold text-success mb-3">3. Research & Innovation</h2>
+                <p class="fs-5">
+                    The path to a sustainable future is paved with discovery. ClimateDigest champions the latest scientific research, 
+                    technological innovations, and policy developments that offer new insights and solutions for addressing
+                     climate challenges. We bridge the gap between scientific discovery and public understanding.
+                </p>
+            </div>
+            <div class="col-md-5 order-md-2 text-center">
+                <img src="{% static 'images/scientists.png' %}" alt="Scientists in a lab with plants" class="img-fluid rounded shadow-sm my-3">
+            </div>
+        </div>
+    </section>
+
+    <section class="p-4 p-md-5 mb-5 bg-white rounded-3 shadow-sm">
+        <div class="row align-items-center">
+            <div class="col-md-5 text-center">
+                <img src="{% static 'images/costalcity.png' %}" alt="Coastal city with protective barriers" class="img-fluid rounded shadow-sm my-3">
+            </div>
+            <div class="col-md-7">
+                <h2 class="h3 fw-bold text-success mb-3">4. Adaptation & Resilience</h2>
+                <p class="fs-5">
+                    As the climate changes, communities must adapt. We explore strategies for building resilience against climate impacts,
+                     including sustainable infrastructure, early warning systems, water management, and protecting vulnerable ecosystems.
+                      Learn how communities are preparing for the future.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-4 p-md-5 mb-5 bg-light rounded-3 shadow-sm">
+        <div class="row align-items-center">
+            <div class="col-md-7 order-md-1">
+                <h2 class="h3 fw-bold text-success mb-3">5. Community Engagement & Partnerships</h2>
+                <p class="fs-5">
+                    Tackling climate change requires collective action. ClimateDigest fosters a sense of community by highlighting local initiatives,
+                     success stories, and opportunities for individuals to get involved. We also feature partnerships with organizations,
+                      NGOs, and governments working towards common goals.
+                </p>
+            </div>
+            <div class="col-md-5 order-md-2 text-center">
+                <img src="{% static 'images/collab.png' %}" alt="Diverse group of people collaborating" class="img-fluid rounded shadow-sm my-3">
+            </div>
+        </div>
+    </section>
+
+    <section class="p-4 p-md-5 mb-5 bg-white rounded-3 shadow-sm">
+        <div class="row align-items-center">
+            <div class="col-md-5 text-center">
+                <img src="{% static 'images/pplemarching.png' %}" alt="People marching for climate policy" class="img-fluid rounded shadow-sm my-3">
+            </div>
+            <div class="col-md-7">
+                <h2 class="h3 fw-bold text-success mb-3">6. Policy Advocacy</h2>
+                <p class="fs-5">
+                    Effective governance and strong policies are important for systemic change. 
+                    We analyze and discuss climate policies at local, national, and international levels, advocating for ambitious and
+                     equitable solutions that accelerate the transition to a low-carbon, climate-resilient world.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="text-center mt-5 p-4 bg-success text-white rounded shadow-sm">
+        <h2 class="h3 mb-3">Join Us in Building a Sustainable Future!</h2>
+        <p class="fs-5">
+            Explore our stories, learn about solutions, and become part of the ClimateDigest community.
+        </p>
+        <a href="{% url 'index' %}" class="btn btn-light btn-lg mt-3">Back to Home</a>
+        <a href="{% url 'login' %}" class="btn btn-outline-light btn-lg mt-3 ms-3">Explore Stories</a>
+    </div>
+
+</div>
+{% endblock content %}

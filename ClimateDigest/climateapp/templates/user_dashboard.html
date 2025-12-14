@@ -1,0 +1,101 @@
+ {% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+{% endblock extra_css %}
+
+
+{% block content %}
+<a href="{% url 'logout' %}">Logout</a>
+
+<h2>Welcome, {{ user.username }} </h2>
+
+<div class="dashboard-grid">
+
+    <div class="card">
+        <h3> Climate Fact of the Day</h3>
+        <p>{{ fact }}</p>
+    </div>
+</div>
+
+<div class="container my-5">
+    <h2 class="mb-4 fw-bold text-primary"> Climate Digest Dashboard</h2>
+
+    <div class="row">
+        <!-- Latest News Section -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/news.png' %}" class="card-img-top" alt="Latest News">
+                <div class="card-body">
+                    <h5 class="card-title">Latest News</h5>
+                    <p class="card-text">Stay updated with the most recent climate news and policy changes worldwide.</p>
+                    <a href="{% url 'info' %}" class="btn btn-outline-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Innovations Section -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/innovation.png' %}" class="card-img-top" alt="Innovations">
+                <div class="card-body">
+                    <h5 class="card-title">Innovations</h5>
+                    <p class="card-text">Discover the latest technologies and innovations driving climate solutions.</p>
+                    <a href="{% url 'innovation' %}" class="btn btn-outline-success">Explore</a>
+                </div>
+            </div>
+        </div>
+    
+
+       
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/community.png' %}" class="card-img-top" alt="Stories">
+                <div class="card-body">
+                    <h5 class="card-title">Community Stories</h5>
+                        <p class="card-text">Read inspiring stories from communities tackling climate change.</p>
+                        <a href="{% url 'morestories' %}" class="btn btn-outline-info">View Stories</a>
+                    
+                </div>
+            </div>
+        </div>
+    
+
+        <!--research-->
+        <div class="col-md-6 mb-4">
+             <div class="card shadow-sm h-100">
+                <img src="{% static 'images/res.png' %}" class="card-img-top" alt="Innovations">
+                <div class="card-body">
+                    <h5 class="card-title">Latest Climate Research</h5>
+                    <p class="card-text">These are our latest research</p> 
+                     <a href="{% url 'latestresearch' %}" class="btn btn-outline-info">View Research</a>  
+                </div>
+              </div>     
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/events.png' %}" class="card-img-top" alt="events">
+                <div class="card-body">
+                    <h5 class="card-title">Latest Events</h5>
+                    <p class="card-text">Below are our upcoming events.</p>                    <a href="{% url 'events' %}" class="btn btn-outline-success">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="card">
+        <h3>Quick Links</h3>
+        <a href="{% url 'news' %}" class="btn">Climate News</a>
+        <a href="{% url 'research' %}" class="btn">Research</a>
+        <a href="{% url 'stories' %}" class="btn">Stories</a>
+       
+    </div>
+</div>
+
+{% endblock content %}

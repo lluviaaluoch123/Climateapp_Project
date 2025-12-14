@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Contact Us - ClimateDigest{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<div class="container my-5">
+    <header class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-success">Get in Touch</h1>
+        <p class="lead text-muted">
+            We welcome your questions, partnership inquiries, and feedback.
+        </p>
+    </header>
+
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-7 mb-5">
+            <div class="card shadow-lg p-4 border-0">
+                <div class="card-body">
+                    <h3 class="h4 text-success mb-4 border-bottom pb-2">Send Us a Message</h3>
+                    
+                    <form method="post">
+                        {% csrf_token %}
+                        
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success btn-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="card shadow-sm bg-light p-4 h-100 border-0">
+                <div class="card-body">
+                    <h3 class="h4 text-secondary mb-4">Our Details</h3>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold text-dark">General Inquiries</h5>
+                        <p class="text-muted mb-0">
+                            <i class="fas fa-envelope me-2 text-success"></i> 
+                            <a href="mailto:info@climatedigest.org" class="text-decoration-none text-muted">info@climatedigest.org</a>
+                        </p>
+                        <p>Contact us at 0712345678 or 0713589996</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold text-dark">Partnerships & Media</h5>
+                        <p class="text-muted mb-0">
+                            <i class="fas fa-handshake me-2 text-success"></i> 
+                            <a href="mailto:partnerships@climatedigest.org" class="text-decoration-none text-muted">partnerships@climatedigest.org</a>
+                        </p>
+                    </div>
+                    
+                    <hr>
+
+                    <h5 class="fw-bold text-dark mb-3">Follow Us</h5>
+                    <div class="d-flex justify-content-start">
+                        <a href="https://twitter.com" target="_blank" class="btn btn-outline-success btn-sm me-2"><i class="fab fa-twitter"></i> Twitter</a>
+                        <a href="https://www.linkedin.com" target="_blank" class="btn btn-outline-success btn-sm me-2"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        <a href="https://www.facebook.com" target="_blank" class="btn btn-outline-success btn-sm"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+{% endblock content %}

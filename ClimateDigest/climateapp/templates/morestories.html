@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Community Stories - ClimateDigest{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/morestories.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center text-success mb-4"> Community Climate Stories</h1>
+    <p class="lead text-center mb-5">
+        Hear directly from people across Kenya, Africa, and beyond about how climate change is affecting their lives.
+    </p>
+
+    
+    <!-- Section: ClimateDigest Impact -->
+    <section>
+        <h2 class="text-primary mb-4"> How ClimateDigest Has Helped</h2>
+        <div class="row">
+            <!-- Testimony 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100 bg-light">
+                    <img src="{% static 'images/community.png' %}" class="card-img-top" alt="communiy">
+                    <div class="card-body">
+                        <h5 class="card-title">Community Awareness</h5>
+                        <p class="card-text">“Through ClimateDigest, we learned about sustainable farming practices. The platform has given us knowledge to adapt to changing weather patterns.
+                            For instance, adopting drought-resistant crops like sorghum and utilizing simple techniques like ziz-zag trenches has enabled us to secure at least one reliable 
+                            harvest each year, drastically reducing our dependence on erratic rainfall.”</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimony 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100 bg-light">
+                    <img src="{% static 'images/com.png' %}" class="card-img-top" alt="communiy">
+                    <div class="card-body">
+                        <h5 class="card-title">Youth Engagement</h5>
+                        <p class="card-text">“ClimateDigest has empowered young people in our community to take action. We now organize clean‑up drives and tree planting campaigns.
+                            The platform gave us the organizational tools and educational resources to start the 'Green Generation' club, which has mobilized over 150 volunteers 
+                            to plant 5,000 seedlings along the local riverbanks.”</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimony 3 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100 bg-light">
+                     <img src="{% static 'images/pol.png' %}" class="card-img-top" alt="communiy">
+                    <div class="card-body">
+                        <h5 class="card-title">Policy Influence</h5>
+                        <p class="card-text">“By sharing our stories on ClimateDigest, local leaders have started listening. Our voices are being heard in climate policy discussions.
+                            After submitting photographic evidence of local wetland destruction, our County Assembly passed a motion to enforce stricter environmental impact
+                             assessments, demonstrating that grassroots digital advocacy works.”</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimony 4 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100 bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title">Community Resilience</h5>
+                        <p class="card-text">“ClimateDigest connected us with other communities facing similar challenges. Together, we share solutions
+                             and build resilience.We used the peer-to-peer mapping tool to find coastal communities in Kwale successfully implementing mangrove restoration projects,
+                              allowing us to replicate their successful low-cost method to protect our own eroding shorelines.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <img src="{% static 'images/community.jpg' %}" alt="">
+        </div>
+    </section>
+
+<!-- Section: Climate Change Impacts -->
+
+
+
+
+    <section class="mb-5">
+        <h2 class="text-primary mb-4">Voices from the Ground</h2>
+        <div class="container my-5">
+    <p class="lead text-center mb-5">
+        Hear directly from people across Kenya, Africa, and beyond about how climate change is affecting their lives.
+    </p>
+        <div class="row">
+            <!-- Testimony 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Amina – Turkana County, Kenya</h5>
+                        <p class="card-text">“Our livestock have been dying due to prolonged droughts. Water sources have dried up, and families are forced to walk long distances for survival. Climate change has made our traditional way of life uncertain.”</p>
+                    <img src="{% static 'images/dead.jpg' %}" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimony 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Kwame – Accra, Ghana</h5>
+                        <p class="card-text">“Heavy rains and flooding have destroyed homes in my neighborhood. We rebuild every year, but the floods keep coming stronger. Climate change is no longer a distant issue—it’s here with us.”</p>
+                    <img src="{% static 'images/flood.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimony 3 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Lydia – Nairobi, Kenya</h5>
+                        <p class="card-text">“Unpredictable weather has made farming difficult. Crops fail more often, and food prices rise. Climate change is affecting our ability to feed our families.”</p>
+                    <img src="{% static 'images/badweather.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimony 4 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Samuel – Cape Town, South Africa</h5>
+                        <p class="card-text">“Water shortages have become a constant worry. Climate change has made us rethink how we use and conserve water in our city.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   
+            <!-- Dynamic stories from database -->
+            <section class="mb-5">
+                <h2 class="text-primary mb-4">Voices from the Ground</h2>
+                <div class="row">
+                    {% for story in stories %}
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm h-100 bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ story.title }}</h5>
+                                <p class="card-text">{{ story.content|truncatewords:40 }}</p>
+                                <p class="text-muted">Added by {{ story.user.username }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% empty %}
+                    <p class="text-center">No community stories yet. Check back soon!</p>
+                    {% endfor %}
+                </div>
+            </section>
+        </div>
+       
+
+
+</section>
+
+
+
+</div>
+{% endblock content %}

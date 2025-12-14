@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Latest Climate Research - ClimateDigest{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/latestresearch.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center text-success mb-4">🌍 Latest Climate Change Research</h1>
+    <p class="lead text-center mb-5">
+        Explore recent scientific findings and global insights into climate change.
+    </p>
+
+    <!-- Section: Vector-Borne Diseases -->
+    <section class="mb-5">
+        <h2 class="text-primary mb-4">Vector-Borne Diseases and Climate Change</h2>
+        <div class="card shadow-sm bg-light p-4">
+            <p>
+                Rising temperatures and shifting rainfall patterns are intensifying the spread of mosquito-borne diseases 
+                such as malaria, dengue, and Zika. Researchers highlight how climate change is reshaping vector distribution 
+                across Africa, Asia, and even parts of Europe and North America. Modern predictive tools like GIS and remote 
+                sensing are now being used to anticipate outbreaks and strengthen public health responses.
+            </p>
+            <p><a href="https://www.frontiersin.org/research-topics/59965/recent-advances-in-vector-borne-diseases-and-climate-change/magazine" target="_blank">Read the full article here</a></p>
+        </div>
+    </section>
+
+    <!-- Section: Mental Health -->
+    <section class="mb-5">
+        <h2 class="text-primary mb-4">Mental Health Impacts of Climate Change</h2>
+        <div class="card shadow-sm bg-light p-4">
+            <p>
+                Beyond physical health, climate change is affecting mental well-being. Extreme heat in 2024 led to a nearly 
+                10% rise in psychiatric hospital admissions in the UK. Flood risks and unpredictable weather events are 
+                increasing stress and anxiety among communities. Researchers emphasize the need for integrated climate and 
+                mental health policies.
+            </p>
+            <p><a href="https://geographical.co.uk/climate-change/climate-change-how-does-it-affect-our-mental-health" target="_blank">Explore the research here</a></p>
+        </div>
+    </section>
+
+    <!-- Section: Assam Research -->
+    <section class="mb-5">
+        <h2 class="text-primary mb-4">Regional Climate Research in Assam, India</h2>
+        <div class="card shadow-sm bg-light p-4">
+            <p>
+                Assam has completed six climate research projects, including vulnerability assessments and green budget 
+                tagging. Nine more projects are underway, focusing on flood management, decarbonisation pathways, and 
+                building climate-resilient towns. These initiatives highlight how local governments are taking proactive 
+                steps to adapt to climate challenges.
+            </p>
+            <p><a href="https://timesofindia.indiatimes.com/city/guwahati/state-completes-6-climate-research-projects-9-more-underway/articleshow/125643329.cms" target="_blank">Read more here</a></p>
+        </div>
+    </section>
+
+    <!-- Section: Global Insights -->
+    <section class="mb-5">
+        <h2 class="text-primary mb-4">Global Insights: 10 New Findings in Climate Science</h2>
+        <div class="card shadow-sm bg-light p-4">
+            <p>
+                The annual “10 New Insights in Climate Science” report (2025/2026) synthesizes findings from over 70 
+                scientists worldwide. Key takeaways include weakening carbon sinks in forests and soils, worsening outbreaks 
+                of mosquito-borne diseases, and heat stress reducing labor productivity. These insights provide critical 
+                guidance for policymakers navigating this climate-critical decade.
+            </p>
+            <p>
+                <a href="https://10insightsclimate.science/" target="_blank">Official Insights Report</a> | 
+                <a href="https://futureearth.org/2025/10/29/10-new-insights-in-climate-science-for-2025/" target="_blank">Future Earth Summary</a> | 
+                <a href="https://www.sei.org/publications/10-new-insights-climate-science-2025-2026/" target="_blank">SEI Publication</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Section: State of the Climate -->
+    <section class="mb-5">
+        <h2 class="text-primary mb-4">State of the Climate Report 2025</h2>
+        <div class="card shadow-sm bg-light p-4">
+            <p>
+                A landmark report published in BioScience warns that the planet’s vital signs are “flashing red.” 
+                Human-driven climate alterations are no longer distant threats but present realities. The report calls for 
+                urgent action to address political inaction, misinformation, and unsustainable economic systems.
+            </p>
+            <p><a href="https://academic.oup.com/bioscience/article/75/12/1016/8303627" target="_blank">Read the BioScience article</a></p>
+        </div>
+    </section>
+
+      <!-- Loop through research articles -->
+    {% for item in research %}
+    <section class="mb-5">
+        <h2 class="text-primary mb-4">{{ item.title }}</h2>
+        <div class="card shadow-sm bg-light p-4">
+            <p>{{ item.summary }}</p>
+            <p>
+                <a href="{{ item.link }}" target="_blank">🔗 Read Full Article</a>
+            </p>
+            <p class="text-muted">Added by {{ item.added_by }}</p>
+        </div>
+    </section>
+    {% empty %}
+    <p class="text-center">No research articles available yet. Check back soon!</p>
+    {% endfor %}
+
+</div>
+{% endblock content %}

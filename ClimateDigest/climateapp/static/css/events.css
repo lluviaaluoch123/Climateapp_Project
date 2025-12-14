@@ -1,0 +1,65 @@
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Page title */
+h1.page-title, h1.text-success {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Section headers */
+h2.text-primary {
+    font-weight: 600;
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+/* Card styling */
+.card {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card-body {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.card h5.card-title {
+    font-weight: 600;
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+ */
+.card a {
+    color: #2980b9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+    color: #1f6391;
+}
+
+.card p strong {
+    color: #2c3e50;
+}
+
+
+section.mb-5 {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}

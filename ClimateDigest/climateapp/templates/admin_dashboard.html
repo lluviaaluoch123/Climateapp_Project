@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/admin_dashboard.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<a href="{% url 'logout' %}">Logout</a>
+
+<div class="container my-5">
+    <h2 class="text-center text-danger fw-bold mb-4"> Admin Dashboard</h2>
+    <p class="lead text-center mb-5">
+        Manage ClimateDigest content, monitor activity, and oversee community contributions.
+    </p>
+
+    <div class="row dashboard-grid">
+        <!-- Latest News -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/news.png' %}" class="card-img-top" alt="Tips">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Latest Climate News</h5>
+                    <p class="card-text">Approve, edit, or delete user-submitted climate news.</p>
+                    <a href="{% url 'manage_news' %}" class="btn btn-outline-primary">Go to Tips</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Manage Stories -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/stories.png' %}" class="card-img-top" alt="Stories">
+                <div class="card-body">
+                    <h5 class="card-title">Community Stories</h5>
+                    <p class="card-text">Review and moderate stories shared by communities.</p>
+                    <a href="{% url 'manage_stories' %}" class="btn btn-outline-success">Go to Stories</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row dashboard-grid">
+        <!-- Manage Research -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/research.png' %}" class="card-img-top" alt="Research">
+                <div class="card-body">
+                    <h5 class="card-title">Climate Research</h5>
+                    <p class="card-text">Add or update the latest research articles and resources.</p>
+                    <a href="{% url 'manage_research' %}" class="btn btn-outline-info">Go to Research</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Manage Events -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/events.png' %}" class="card-img-top" alt="Events">
+                <div class="card-body">
+                    <h5 class="card-title">Climate Events</h5>
+                    <p class="card-text">Create, edit, or remove upcoming climate-related events.</p>
+                    <a href="{% url 'manage_events' %}" class="btn btn-outline-warning">Go to Events</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Analytics Section -->
+    <section class="mt-5">
+        <h3 class="text-secondary mb-3"> Site Analytics</h3>
+        <div class="analytics-grid">
+            <div class="analytics-card">
+                <h4>Total Users</h4>
+                <p>{{ total_users }}</p>
+            </div>
+            <div class="analytics-card">
+                <h4>Stories Submitted</h4>
+                <p>{{ total_stories }}</p>
+            </div>
+            <div class="analytics-card">
+                <h4>Tips Submitted</h4>
+                <p>{{ total_tips }}</p>
+            </div>
+            <div class="analytics-card">
+                <h4>Events Created</h4>
+                <p>{{ total_events }}</p>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock content %}
+

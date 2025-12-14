@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Latest News{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/news.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<h1>Latest Global Climate Trends & Action</h1>
+<div class="news.container">
+    <h1>🇰🇪 Kenya Climate Resilience: Action, Impacts & Innovation</h1>
+
+    <section id="mitigation">
+        <h2> National Mitigation Measures & Low-Carbon Growth</h2>
+        <p>Kenya is globally recognized for its low-carbon development path, with its strategy focused on
+             enhancing carbon sinks and expanding its already dominant renewable energy sector. Key pillars
+              include:</p>
+
+        <ul class="card-list">
+            <li class="card">
+                <h3>Renewable Energy Leadership</h3>
+                <p>Over 90% of Kenya's grid electricity is already from green sources, primarily Geothermal,
+                     Hydro, and Wind e.g., Lake Turkana Wind Power. The goal is to reach 100% clean energy
+                      generation in the near future and utilize the vast geothermal potential (up to 10,000MW).
+                    </p>
+                    <img src="{% static 'images/renenergy.png' %}" class="card-img-top" alt="">
+                <span class="source">Source: Ministry of Energy / EPRA</span>
+            </li>
+            <li class="card">
+                <h3>15 Billion Tree Initiative</h3>
+                <p>The government is driving a national campaign to grow 15 billion trees by 2032 to increase
+                     the national tree cover to over 30%. This is a massive Nature-Based Solution (NBS)
+                      aimed at both carbon sequestration and enhanced water security.</p>
+                      <img src="{% static 'images/mission.png' %}" class="card-img-top" alt="">
+                <span class="source">Source: Ministry of Environment and Forestry</span>
+            </li>
+            <li class="card">
+                <h3>Green Mobility Transition</h3>
+                <p>There is significant push and investment towards Electric Vehicles, especially in the 
+                    two- and the Boda Boda sector, which is critical for last-mile transport. 
+                    Tax incentives and local assembly plants are driving this clean transition in the transport
+                     sector.</p>
+                     <img src="{% static 'images/green.png' %}" class="card-img-top" alt="">
+                
+            </li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section id="effects">
+        <h2> The Dual Threat: Droughts, Floods & Lake Swelling</h2>
+        <p>Kenya is highly vulnerable, with its economy heavily dependent on climate-sensitive sectors like 
+            agriculture. The impacts are characterized by a vicious cycle of prolonged droughts followed by
+             severe, unseasonal flooding.</p>
+
+        <ul class="card-list">
+            <li class="card">
+                <h3>Recurrent Drought Crises</h3>
+                <p>The recent  Horn of Africa drought (2020-2023) was the worst in 40 years, severely impacting
+                     over 5 million people in Arid and Semi-Arid Lands (ASALs) like Turkana, Garissa, 
+                     and Marsabit. It decimated livestock and forced pastoralists to migrate, leading to
+                      resource conflicts.</p>
+                
+            </li>
+            <li class="card">
+                <h3>Intense El Nino Flooding</h3>
+                <p>Following the drought, the 2023/2024 El Niño rains caused catastrophic 
+                    riverine and flash flooding, displacing hundreds of thousands, damaging critical 
+                    infrastructure, and destroying farmlands in counties like Tana River, Mandera, and Nairobi.</p>
+                
+            </li>
+            <li class="card">
+                <h3>Rising Lake Waters & Coastal Threats</h3>
+                <p>Several Rift Valley lakes like lake Baringo and Turkana have swelled dramatically,
+                     submerging homes, schools, and health facilities. On the coast, sea-level rise
+                      threatens infrastructure and freshwater aquifers in low-lying areas of Mombasa and Lamu.</p>
+                <span class="source">Source: UNEP / World Bank</span>
+            </li>
+        </ul>
+       
+        <img src="{% static 'images/both.png' %}" class="card-img-top" alt="">
+    </section>
+
+    <hr>
+
+    <section id="technology">
+        <h2> Locally-Led Technology & Adaptation Solutions</h2>
+        <p>Kenyan innovators are leveraging digital tools and local knowledge to build resilience,
+             especially in food security and disaster preparedness.</p>
+
+        <ul class="card-list">
+            <li class="card">
+                <h3>Climate-Smart Agriculture (CSA)</h3>
+                <p>Adoption of technologies like solar-powered drip irrigation and rainwater harvesting 
+                    systems lined water pans is enabling farmers to transition from unreliable
+                     rainfed agriculture to high-value horticulture, even in ASALs.</p>
+                
+            </li>
+            <li class="card">
+                <h3>Digital Climate Advisories (SMS/App)</h3>
+                <p>Platforms are integrating high-resolution satellite and meteorological data like th
+                    e Kenya Agricultural Observatory Platform to deliver tailored SMS advisories to hundreds
+                     of thousands of farmers and pastoralists on optimal planting times, pest control,
+                      and livestock movement.</p>
+               
+                      
+            </li>
+            <li class="card">
+                <h3>Carbon Markets Framework</h3>
+                <p>Kenya's new Climate Change Act of 2023 is establishing robust legal and policy guidelines
+                     for participation in voluntary carbon markets. This aims to channel private climate
+                      finance into community-based projects like afforestation and clean cookstoves.</p>
+               
+            </li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section id="policy">
+        <h2> Policy Milestones & Global Leadership</h2>
+        <p>Kenya continues to drive the African climate agenda, hosting major international policy forums and consolidating national commitments.</p>
+        <ul>
+            <li>Second Nationally Determined Contribution Kenya submitted its updated NDC in 2025, committing
+                 to a 35% reduction in GHG emissions by 2035 relative to the Business As Usual scenario,
+                  requiring significant international investment.</li>
+            <li>Africa Climate Summit Following the successful hosting of the inaugural ACS in Nairobi (2023),
+                 Kenya is focused on implementing the Nairobi Declaration, pushing for climate finance
+                  reform and scaling up clean energy investment across the continent.</li>
+            <li>UNEP Headquarters: As the host of the UN Environment Programme (UNEP) in Nairobi, Kenya remains a critical diplomatic center for global environmental policy, as seen during events like the UN Environment Assembly (UNEA-7).</li>
+        </ul>
+        <p style="text-align: center; margin-top: 30px;">
+            <a href="https://napglobalnetwork.org/2025/11/kenyas-next-chapter-in-climate-resilience-shaped-by-community-voices/" target="_blank" class="btn-link">Read More on Locally Led Adaptation in Kenya</a>
+        </p>
+    </section>
+</div>
+
+
+
+
+
+
+{% endblock content %}

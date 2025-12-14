@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Climate News - ClimateDigest{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/info.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center text-success mb-4"> Latest Climate News</h1>
+    <p class="lead text-center mb-5">
+        Stay updated on global climate developments, with a spotlight on Kenya and Africa’s resilience.
+    </p>
+
+    <div class="row">
+        <!-- Kenya Climate Finance Tool -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Kenya Pilots Climate Finance Watch Tool</h5>
+                    <p class="card-text">A groundbreaking tool launched in Kenya aims to track climate finance transparency and accountability, with plans to expand across Africa.</p>
+                    <a href="https://www.aciafrica.org/news/19035/catholic-environmentalist-lauds-groundbreaking-climate-finance-watch-tool-piloted-in-kenya-as-important-in-climate-space" target="_blank" class="btn btn-outline-success">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- UNEA-7 in Nairobi -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Kenya Hosts UNEA-7</h5>
+                    <p class="card-text">Nairobi is hosting the 7th UN Environment Assembly, where leaders discuss sustainable solutions for a resilient planet.</p>
+                    <a href="https://www.standardmedia.co.ke/health/health-science/article/2001535959/kenya-leads-africas-voice-at-global-environmental-assembly" target="_blank" class="btn btn-outline-info">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Women Leading Climate Solutions -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Women Driving Africa’s Climate Agenda</h5>
+                    <p class="card-text">Kenya’s Second Lady Dr. Joyce Kithure emphasizes empowering women as central actors in Africa’s climate resilience and food security.</p>
+                    <a href="https://www.kbc.co.ke/tag/first-ladies-of-africa-impact-and-resilience-flair/" target="_blank" class="btn btn-outline-warning">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kenya Landslides -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Kenya’s Deadly Landslides</h5>
+                    <p class="card-text">Recent landslides in Elgeyo Marakwet highlight Kenya’s vulnerability to extreme weather and the urgent need for climate readiness.</p>
+                    <a href="https://www.africanews.com/2025/11/03/kenyas-deadly-landslides-test-the-countrys-climate-readiness/" target="_blank" class="btn btn-outline-danger">Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Africa’s Stakes in Global Talks -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Africa’s Stakes in Global Talks</h5>
+                    <p class="card-text">African nations push for stronger climate governance and financing during UN environment talks in Nairobi.</p>
+                    <a href="https://news.mongabay.com/2025/12/africas-stakes-in-global-un-environment-talks-in-nairobi/" target="_blank" class="btn btn-outline-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Global Climate Action -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Global Climate Action Updates</h5>
+                    <p class="card-text">From COP30 outcomes to UN reports, the world debates food systems, trade resilience, and urgent climate financing.</p>
+                    <a href="https://www.the-star.co.ke/climate-change/2025-12-11-ruto-urges-urgent-equitable-climate-financing-at-unea-7" target="_blank" class="btn btn-outline-secondary">Global News</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

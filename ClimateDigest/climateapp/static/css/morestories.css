@@ -1,0 +1,82 @@
+
+body {
+    background-color: #f7fcf9; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #27ae60; 
+    border-bottom: 4px solid #16a085;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2980b9; 
+    margin-bottom: 20px;
+    border-left: 6px solid #27ae60;
+    padding-left: 12px;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: none;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.card.bg-light {
+    background-color: #ecf9f1; 
+    border: 1px solid #d4ede0;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .card-title {
+        font-size: 1.1rem;
+    }
+}

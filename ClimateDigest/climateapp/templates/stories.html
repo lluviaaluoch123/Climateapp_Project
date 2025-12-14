@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home - ClimateDigest{% endblock %}
+
+{% block content %}
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Our Stories & Initiatives</h1>
+
+     <div>
+    <div class="row">
+        <!--  Awareness Programs -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Awareness Programs</h5>
+                    <p class="card-text">
+                        ClimateDigest has organized community workshops and school campaigns to raise awareness about climate change and sustainable living. These programs aim to educate the public on reducing carbon footprints and protecting the environment.
+                    </p>
+                    <div>
+                        <img src="{% static 'images/eco.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Story 2: Mitigation Programs -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Mitigation Programs</h5>
+                    <p class="card-text">
+                        Our mitigation initiatives focus on reducing greenhouse gas emissions through tree planting, clean energy adoption, and partnerships with local industries to implement eco-friendly practices.
+                    </p>
+                    <div>
+                        <img src="{% static 'images/mitigation.png' %}" class="mitigate" width="100%" alt="">
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+     </div>
+        <!-- Story 3: Community Engagement -->
+        <div class="col-md-6 mb-12">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Community Engagement</h5>
+                    <p class="card-text">
+                        We actively involve local communities in climate action, organizing clean-up drives, environmental clubs, and volunteer programs. Engaging citizens helps foster a sense of ownership and responsibility towards their surroundings.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Story 4: Adaptation Methods -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Adaptation Methods</h5>
+                    <p class="card-text">
+                        ClimateDigest provides guidance on adaptation strategies, such as water conservation, flood-resistant farming techniques, and building resilient communities to cope with changing climate conditions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <div class="text-center mt-5 p-4 bg-success text-white rounded shadow-sm">
+        <h2 class="h3 mb-3">Join Us in Building a Sustainable Future!</h2>
+        <p class="fs-5">
+            Explore our stories, learn about solutions, and become part of the ClimateDigest community.
+        </p>
+        <a href="{% url 'index' %}" class="btn btn-light btn-lg mt-3">Back to Home</a>
+        <a href="{% url 'login' %}" class="btn btn-outline-light btn-lg mt-3 ms-3">Explore More Stories</a>
+    </div>
+
+{% endblock %}

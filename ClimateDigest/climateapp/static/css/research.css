@@ -1,0 +1,52 @@
+
+
+body {
+    background-color: lightgrey; 
+}
+
+
+.text-primary {
+    color: #1565c0 !important; 
+}
+
+.bg-primary {
+    background-color: #1565c0 !important; 
+}
+
+.btn-outline-primary {
+    color: #1565c0;
+    border-color: #1565c0;
+}
+
+.btn-outline-primary:hover {
+    background-color: #1565c0;
+    color: white;
+}
+
+
+header .display-4 {
+    border-bottom: 3px solid #1565c0;
+    padding-bottom: 15px;
+}
+
+.research-section {
+    border-left: 6px solid #1565c0; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-section:hover {
+    transform: translateY(-4px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+.list-unstyled li {
+    line-height: 1.8;
+}
+
+.research-image {
+    max-height: 300px; 
+    object-fit: cover;
+    border: 3px solid #1565c0;
+    border-radius: 8px !important;
+}

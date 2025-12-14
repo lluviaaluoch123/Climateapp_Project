@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/manage_stories.css' %}">
+{% endblock extra_css %}
+
+
+
+{% block content %}
+<div class="container">
+    <h1 class="page-title"> Manage Research Articles</h1>
+
+    <!-- Add new research -->
+    <div class="form-card">
+        <h2>Add a New Research Article</h2>
+        <form method="post" class="crud-form">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter research title" required>
+            </div>
+            <div class="form-group">
+                <label for="summary">Summary:</label>
+                <textarea id="summary" name="summary" rows="4" placeholder="Write a short summary..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="link">Link:</label>
+                <input type="url" id="link" name="link" placeholder="https://example.com/article" required>
+            </div>
+            <button type="submit" class="btn-primary"> Add Research</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- List existing research -->
+    <div class="table-card">
+        <h2>Existing Research Articles</h2>
+        <table class="crud-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Summary</th>
+                    <th>Link</th>
+                    <th>Added By</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in research %}
+                <tr>
+                    <td>{{ item.title }}</td>
+                    <td>{{ item.summary|truncatewords:20 }}</td>
+                    <td><a href="{{ item.link }}" target="_blank" class="btn-secondary">🔗 View</a></td>
+                    <td>{{ item.added_by }}</td>
+                    <td>
+                        
+                        <a href="{% url 'delete_research' item.id %}" class="btn-danger"
+                           onclick="return confirm('Are you sure you want to delete this research article?');"> Delete</a>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr><td colspan="5" class="empty-msg">No research articles available. Add one above!</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock content %}

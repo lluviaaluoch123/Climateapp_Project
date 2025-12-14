@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Climate Research & Innovation - ClimateDigest{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/research.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<div class="container my-5">
+    <header class="text-center mb-5 pb-3 border-bottom">
+        <h1 class="display-4 fw-bold text-primary">Cutting-Edge Climate Research</h1>
+        <p class="lead text-muted">
+            Exploring the science, data, and policy innovation driving our understanding of climate change and adaptation strategies.
+        </p>
+    </header>
+
+    <section class="p-4 p-md-5 mb-5 bg-white rounded-3 shadow-lg research-section">
+        <div class="row align-items-center">
+            <div class="col-md-7 order-md-1">
+                <h2 class="h3 fw-bold text-primary mb-3">1. Climate Modeling and Data Science</h2>
+                <p class="fs-5 text-dark">
+                    Advanced computational models are essential for predicting future climate scenarios and understanding complex earth systems. Our research focuses on utilizing AI and machine learning to process massive datasets, leading to more accurate forecasts of sea-level rise, extreme weather events, and long-term temperature changes. We translate complex model outputs into actionable information for policymakers and industry leaders.
+                </p>
+                <ul class="list-unstyled text-dark">
+                    <li><i class="fas fa-check-circle text-primary me-2"></i> High-resolution regional climate projections.</li>
+                    <li><i class="fas fa-check-circle text-primary me-2"></i> Machine learning for anomaly detection in climate data.</li>
+                    <li><i class="fas fa-check-circle text-primary me-2"></i> Interactive tools for data visualization and scenario planning.</li>
+                </ul>
+
+
+                <a href="https://science.nasa.gov/earth/climate-change/climate-interactives/" target="_blank" class="btn btn-outline-primary mt-3">View Latest Models</a>
+
+
+            </div>
+            <div class="col-md-5 order-md-2 text-center">
+                <img src="{% static 'images/analysis.png' %}" height="2455px", width="4322px" alt="Climate data visualization" class="img-fluid rounded shadow-sm my-3 research-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="p-4 p-md-5 mb-5 bg-light rounded-3 shadow-lg research-section">
+        <div class="row align-items-center">
+            <div class="col-md-5 text-center">
+                <img src="{% static 'images/research.png' %}" height="3000px" width="2666px" alt="Scientists conducting field research" class="img-fluid rounded shadow-sm my-3 research-image">
+            </div>
+            <div class="col-md-7">
+                <h2 class="h3 fw-bold text-primary mb-3">2. Field Research in Ecosystem Resilience</h2>
+                <p class="fs-5 text-dark">
+                    Understanding how natural ecosystems, from polar ice caps to tropical forests, respond to climate stress is vital. Our teams conduct on-the-ground field work to monitor biodiversity shifts, analyze carbon sequestration rates in various biomes, and study natural adaptation mechanisms. This direct observation provides crucial validation for our remote sensing data and models.
+                </p>
+                <ul class="list-unstyled text-dark">
+                    <li><i class="fas fa-check-circle text-primary me-2"></i> Monitoring of coastal erosion and mangrove restoration.</li>
+                    <li><i class="fas fa-check-circle text-primary me-2"></i> Analysis of heat and drought tolerance in key agricultural crops.</li>
+                    <li><i class="fas fa-check-circle text-primary me-2"></i> Deep-sea exploration to study ocean heat absorption.</li>
+                </ul>
+                <a href="https://mangroveactionproject.org/wp-content/uploads/2024/06/CBEMR-article-in-FAO-Nature-Faune-en-article.pdf" class="btn btn-outline-primary mt-3">Explore Field Studies</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-4 p-md-5 mb-5 bg-white rounded-3 shadow-lg research-section">
+        <div class="row align-items-center">
+            <div class="col-md-7 order-md-1">
+                <h2 class="h3 fw-bold text-primary mb-3">3. Policy Analysis and Socio-Economic Studies</h2>
+                <p class="fs-5 text-dark">
+                    Scientific knowledge must be translated into effective human action. This theme focuses on the economic and social dimensions of climate change. We research the efficacy of carbon taxes, sustainable finance, and international climate agreements. Our goal is to design equitable policy pathways that accelerate decarbonization while promoting climate justice globally.
+                </p>
+                <ul class="list-unstyled text-dark">
+                    <li><i class="fas fa-check-circle text-primary me-2"></i> Comparative studies of national energy transition policies.</li>
+                    <li><i class="fas fa-check-circle text-primary me-2"></i> Economic modeling of low-carbon industry growth.</li>
+                    <li><i class="fas fa-check-circle text-primary me-2"></i> Research on community-led adaptation planning.</li>
+                </ul>
+                <a href="https://link.springer.com/chapter/10.1007/978-3-031-67691-8_4" class="btn btn-outline-primary mt-3">Read Policy Briefs</a>
+            </div>
+            <div class="col-md-5 order-md-2 text-center">
+                <img src="{% static 'images/discussion.png' %}" height="3311px", width="2340px" alt="People discussing climate policies" class="img-fluid rounded shadow-sm my-3 research-image">
+            </div>
+
+        </div>
+    </section>
+    
+    <div class="text-center mt-5 p-4 bg-primary text-white rounded shadow-lg">
+        <h2 class="h3 mb-3">Dive Deeper into the Science</h2>
+        <p class="fs-5">
+            Access our full repository of peer-reviewed papers and reports.
+        
+
+</div>
+{% endblock content %}

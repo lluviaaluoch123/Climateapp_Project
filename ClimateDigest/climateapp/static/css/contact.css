@@ -1,0 +1,47 @@
+
+
+body {
+    background-color: #f7f9fc; 
+}
+
+
+.card {
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease;
+}
+
+.col-lg-7 .card {
+    border: 1px solid #dee2e6;
+}
+
+.display-4 {
+    color: #198754 !important;
+}
+
+
+.form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25); /* Green focus ring */
+}
+
+/* Button Styling */
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+    font-weight: 600;
+}
+
+.btn-success:hover {
+    background-color: #1565c0; 
+    border-color: #1565c0;
+}
+
+/* Contact Details Icons and Links */
+.text-success {
+    color: #198754 !important;
+}
+
+.card-body a.text-muted:hover {
+    color: #000000 !important;
+    text-decoration: underline !important;
+}

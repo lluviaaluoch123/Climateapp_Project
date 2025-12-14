@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home - ClimateDigest{% endblock %}
+
+{% block content %}
+<div class="container my-4">
+
+    <!-- Hero Section -->
+    <div class="jumbotron text-center p-5 bg-light rounded">
+        <h1 class="display-4">Welcome to ClimateDigest</h1>
+        <p class="lead">Tracking climate trends, news, and stories in an easy and engaging way.</p>
+        <a href="/stories" class="btn btn-success btn-lg mt-3">Explore Stories</a>
+    </div>
+
+    <!-- Carousel / Slideshow -->
+    <div id="climateCarousel" class="carousel slide my-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#climateCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#climateCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#climateCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+                <img src="{% static 'images/forest.png' %}" class="d-block w-100" alt="Forest">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2 rounded">
+                    <h5>Protecting Forests</h5>
+                    <p>Learn how forest conservation combats climate change.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/solarpanel.png' %}" class="d-block w-100" alt="Solar Energy">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2 rounded">
+                    <h5>Renewable Energy</h5>
+                    <p>Solar and wind energy help reduce emissions.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/ocean.png' %}" class="d-block w-100" alt="Ocean">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-2 rounded">
+                    <h5>Ocean Health</h5>
+                    <p>Understand the impact of climate change on marine life.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#climateCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#climateCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Featured Cards -->
+    <h2 class="text-center mb-4">Latest Highlights</h2>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <img src="{% static 'images/drought.png' %}" class="card-img-top" alt="Drought">
+                <div class="card-body">
+                    <h5 class="card-title">Drought Challenges</h5>
+                    <p class="card-text">How communities are adapting to water scarcity caused by climate change.</p>
+                    <a href="/login" class="btn btn-success btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <img src="{% static 'images/flood.png' %}" class="card-img-top" alt="Flood">
+                <div class="card-body">
+                    <h5 class="card-title">Flood Stories</h5>
+                    <p class="card-text">Rising waters are affecting millions. Discover the stories from affected regions.</p>
+                    <a href="/login" class="btn btn-success btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <img src="{% static 'images/renenergy.png' %}" class="card-img-top" alt="Renewable Energy">
+                <div class="card-body">
+                    <h5 class="card-title">Clean Energy Projects</h5>
+                    <p class="card-text">Learn about projects that help communities reduce their carbon footprint.</p>
+                    <a href="/login" class="btn btn-success btn-sm">Read News</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
