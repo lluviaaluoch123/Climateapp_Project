@@ -37,11 +37,18 @@ or use the helper script (creates a venv `.venv` by default):
 bash install_deps.sh
 ```
 
-4. Apply migrations and run the dev server:
+If you encounter errors like "ModuleNotFoundError: No module named 'django'" or "ModuleNotFoundError: No module named 'PIL'", install the missing packages with:
 
 ```bash
-python manage.py migrate
-python manage.py runserver
+pip install django pillow
+```
+
+4. Apply migrations and run the dev server (use the `manage.py` inside the `ClimateDigest` folder):
+
+```bash
+python ClimateDigest/manage.py makemigrations
+python ClimateDigest/manage.py migrate
+python ClimateDigest/manage.py runserver
 ```
 
 ## Notes
